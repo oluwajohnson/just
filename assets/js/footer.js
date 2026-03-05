@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const footer = document.getElementById("footer");
     if (!footer) return;
 
-    const res = await fetch("/footer.html");
+    const res = await fetch("footer.html");
     footer.innerHTML = await res.text();
 
     const year = footer.querySelector("#copyrightYear");
