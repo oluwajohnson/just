@@ -14,6 +14,4 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (menu) {
         $(menu).metisMenu(); // this attaches all click/hover events
     }
-
-
 });
