@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const header = document.getElementById("header");
     if (!header) return;
 
-    const res = await fetch("header.html");
+    const res = await fetch("./header.html");
     header.innerHTML = await res.text();
 
      // initialize MetisMenu after injection
