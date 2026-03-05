@@ -1,0 +1,350 @@
+.banner-partner-bg {
+ background-image: url(../images/partners/1.JPG);
+ height: 850px;
+ display: flex;
+ align-items: center;
+ .banner-solar-energy-inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  .title {
+   font-weight: 700;
+   font-size: 60px;
+   line-height: 70px;
+   color: #fff;
+   margin-bottom: 40px;
+   @media #{$sm-layout} {
+    font-size: 45px;
+    line-height: 57px;
+   }
+   @media #{$large-mobile} {
+    font-size: 30px;
+    line-height: 49px;
+   }
+  }
+  p.disc {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #ffffff;
+  }
+  .button-area {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   @media #{$large-mobile} {
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .rts-btn.btn-primary {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+   }
+   .rts-btn.btn-primary.bg-w {
+    color: #1f1f25;
+    &:hover {
+     color: #fff;
+    }
+    &::before {
+     background: #fff;
+    }
+   }
+  }
+  .vedio-icone {
+   position: absolute;
+   top: -60px;
+   left: 30px;
+   .video-play-button::after {
+    border: 2px solid transparent;
+    background: #fff;
+   }
+   .video-play-button::before {
+    border: 2px solid #ffffff3a;
+   }
+   .text {
+    min-width: max-content;
+    color: #fff;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 29px;
+    font-family: var(--font-primary);
+   }
+  }
+ }
+}
+
+.partners {
+ padding: 96px 200px;
+
+ @media #{$laptop-device} {
+  padding-inline: 100px;
+ }
+ @media #{$lg-layout} {
+  padding-inline: 80px;
+ }
+ @media #{$md-layout} {
+  padding-inline: 40px;
+ }
+ @media #{$sm-layout} {
+  padding-inline: 32px;
+ }
+ @media #{$large-mobile} {
+  padding-inline: 16px;
+ }
+
+ &-section {
+  padding: 80px 0;
+  border-bottom: 1px solid #babcbf;
+  display: flex;
+  justify-content: center;
+
+  &:last-child {
+   border-bottom: none;
+  }
+
+  &-row {
+   flex-direction: row;
+   align-items: center;
+   column-gap: 120px;
+
+   &-header {
+    row-gap: 30px;
+    align-items: start;
+
+    @media #{$sm-md-layout} {
+     row-gap: 24px;
+    }
+
+    &-title-sub {
+     width: 256px;
+    }
+   }
+
+   &-reverse {
+    flex-direction: row-reverse;
+   }
+
+   @media #{$lg-layout} {
+    flex-direction: column;
+    row-gap: 36px;
+   }
+   @media #{$md-layout} {
+    flex-direction: column;
+    row-gap: 36px;
+   }
+   @media #{$sm-md-layout} {
+    flex-direction: column;
+    row-gap: 36px;
+   }
+  }
+
+  &-col {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 36px;
+
+   &-header {
+    align-items: center;
+    justify-content: center;
+    row-gap: 16px;
+   }
+  }
+
+  &-body {
+   display: flex;
+   flex-direction: column;
+   row-gap: 30px;
+
+   &-row {
+    display: flex;
+    column-gap: 20px;
+    row-gap: 36px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    &-item {
+     width: 182px;
+     height: 72px;
+     border: 1px solid #b1b1b1;
+     border-radius: 22px;
+     background-repeat: no-repeat;
+     background-position: center center;
+
+     @media #{$sm-layout} {
+      width: 127px;
+      height: 60px;
+     }
+     @media #{$small-mobile} {
+      width: 96px;
+      height: 45px;
+     }
+    }
+   }
+  }
+
+  &-header {
+   display: flex;
+   flex-direction: column;
+
+   &-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    margin: 0;
+
+    &-sub {
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 21.78px;
+    }
+   }
+  }
+ }
+
+ &-item {
+  &-advisory {
+   &-1 {
+    background-image: url(../images/partners/advisory/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/advisory/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/advisory/3.png);
+   }
+  }
+  &-consulting {
+   &-1 {
+    background-image: url(../images/partners/consulting/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/consulting/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/consulting/3.png);
+   }
+   &-4 {
+    background-image: url(../images/partners/consulting/4.png);
+   }
+   &-5 {
+    background-image: url(../images/partners/consulting/5.png);
+   }
+   &-6 {
+    background-image: url(../images/partners/consulting/6.png);
+   }
+   &-7 {
+    background-image: url(../images/partners/consulting/7.png);
+   }
+   &-8 {
+    background-image: url(../images/partners/consulting/8.png);
+   }
+  }
+  &-development {
+   &-1 {
+    background-image: url(../images/partners/development/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/development/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/development/3.png);
+   }
+  }
+  &-finance {
+   &-1 {
+    background-image: url(../images/partners/finance/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/finance/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/finance/3.png);
+   }
+  }
+  &-implementation {
+   &-1 {
+    background-image: url(../images/partners/implementation/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/implementation/2.png);
+   }
+  }
+  &-minigrid {
+   &-1 {
+    background-image: url(../images/partners/minigrid/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/minigrid/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/minigrid/3.png);
+   }
+   &-4 {
+    background-image: url(../images/partners/minigrid/4.png);
+   }
+   &-5 {
+    background-image: url(../images/partners/minigrid/5.png);
+   }
+   &-6 {
+    background-image: url(../images/partners/minigrid/6.png);
+   }
+   &-7 {
+    background-image: url(../images/partners/minigrid/7.png);
+   }
+   &-8 {
+    background-image: url(../images/partners/minigrid/8.png);
+   }
+   &-9 {
+    background-image: url(../images/partners/minigrid/9.png);
+   }
+  }
+  &-regulators {
+   &-1 {
+    background-image: url(../images/partners/regulators/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/regulators/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/regulators/3.png);
+   }
+  }
+  &-shs {
+   &-1 {
+    background-image: url(../images/partners/shs/1.png);
+   }
+   &-2 {
+    background-image: url(../images/partners/shs/2.png);
+   }
+   &-3 {
+    background-image: url(../images/partners/shs/3.png);
+   }
+   &-4 {
+    background-image: url(../images/partners/shs/4.png);
+   }
+   &-5 {
+    background-image: url(../images/partners/shs/5.png);
+   }
+   &-6 {
+    background-image: url(../images/partners/shs/6.png);
+   }
+   &-7 {
+    background-image: url(../images/partners/shs/7.png);
+   }
+   &-8 {
+    background-image: url(../images/partners/shs/8.png);
+   }
+   &-9 {
+    background-image: url(../images/partners/shs/9.png);
+   }
+  }
+  &-contain {
+   background-size: contain;
+  }
+ }
+}

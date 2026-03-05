@@ -1,0 +1,13 @@
+{
+ "scripts": {
+  "watch:scss": "node-sass -w assets/scss/style.scss assets/css/style.css",
+  "sass": "sass --watch assets/scss/style.scss assets/css/style.css",
+  "format": "prettier --write ."
+ },
+ "dependencies": {
+  "node-sass": "^9.0.0"
+ },
+ "devDependencies": {
+  "prettier": "3.3.3"
+ }
+}

@@ -1,0 +1,6 @@
+#container {
+ height: 90vh;
+ @media (max-width: 600px) {
+  height: 429px !important;
+ }
+}

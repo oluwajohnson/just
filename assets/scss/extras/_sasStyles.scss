@@ -1,0 +1,497 @@
+.parent-sas {
+ .componentOne {
+  h4 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  ul.disc {
+   //    list-style-type: decimal;
+   //    counter-reset: item;
+   margin-left: 20px;
+
+   li.outer-item {
+    // counter-increment: item;
+    font-weight: bold;
+    &::before {
+     //  content: counter(item) '. ';
+     font-weight: bold;
+     margin-right: 10px;
+    }
+
+    ul {
+     list-style-type: disc;
+     margin-left: 20px;
+     padding-left: 10px;
+    }
+   }
+  }
+
+  .funding-list {
+   list-style-type: square;
+   padding-left: 0;
+
+   li {
+    position: relative;
+    padding-left: 20px; /* Adjust the padding as needed */
+
+    &::before {
+     //  content: '\266B'; /* Georgian symbol */
+     position: absolute;
+     left: 0;
+     top: 0;
+    }
+   }
+  }
+ }
+
+ .componentTwo {
+  h4 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+  img {
+   height: 100px;
+   width: 100px;
+  }
+
+  .qual-list {
+   list-style-type: square;
+   padding-left: 0;
+
+   li {
+    position: relative;
+    margin-left: 20px; /* Adjust the margin as needed */
+    // display: block;
+    // text-wrap: wrap;
+
+    &::before {
+     //  content: '\266B'; /* Georgian symbol */
+     position: absolute;
+     left: 0;
+     top: 0;
+    }
+   }
+  }
+
+  table {
+   img {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle; // Align images vertically in table cells
+   }
+
+   td,
+   th {
+    vertical-align: middle; // Align all table cell content vertically
+    text-align: center; // Align text horizontally to the center
+   }
+
+   td,
+   tr,
+   th {
+    border: 1px solid #ddd; /* Adjust border style and color as needed */
+   }
+
+   //    .my-table td,
+   //    .my-table th {
+   //     border: 1px solid #ddd; /* Adjust border style and color as needed */
+   //    }
+  }
+ }
+
+ .componentThree {
+  h4 {
+   font-size: 24px;
+   font-weight: 700;
+  }
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+  img {
+   height: 100px;
+   width: 100px;
+  }
+
+  ul.qual-list {
+   list-style-type: circle;
+   //    counter-reset: item;
+   margin-left: 20px;
+
+   li.outer-item {
+    // counter-increment: item;
+    font-weight: bold;
+    &::before {
+     //  content: counter(item) '. ';
+     font-weight: bold;
+     margin-right: 10px;
+    }
+
+    ul {
+     list-style-type: disc;
+     margin-left: 20px;
+     padding-left: 10px;
+
+     li.inner-item {
+      font-weight: lighter;
+     }
+    }
+   }
+  }
+ }
+
+ .componentFour {
+  h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  table {
+   img {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle; // Align images vertically in table cells
+   }
+
+   thead {
+    background-color: var(--color-primary);
+
+    th {
+     color: white;
+    }
+   }
+
+   .first-element {
+    background-color: var(--color-primary);
+    color: white;
+   }
+
+   .second-element {
+    background-color: var(--color-primary);
+    color: white;
+   }
+
+   td,
+   th {
+    vertical-align: middle; // Align all table cell content vertically
+    text-align: center; // Align text horizontally to the center
+   }
+
+   td,
+   tr,
+   th {
+    border: 1px solid #ddd; /* Adjust border style and color as needed */
+   }
+
+   .table-list {
+    list-style-type: circle;
+    margin-left: 20px;
+    text-align: left;
+
+    li {
+     padding: 0;
+     margin: 0;
+    }
+   }
+
+   //    .my-table td,
+   //    .my-table th {
+   //     border: 1px solid #ddd; /* Adjust border style and color as needed */
+   //    }
+  }
+ }
+
+ .componentFive {
+  h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+
+   span {
+    font-weight: 400;
+    color: gray;
+   }
+  }
+
+  h4 {
+   font-weight: bold;
+   padding: 10px 0;
+  }
+
+  p {
+   text-align: center;
+   width: 70%;
+  }
+
+  img {
+   max-height: 250px;
+   width: 150px;
+  }
+
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  ul {
+   list-style-type: disc;
+   //    margin-left: 20px;
+
+   li.outer-item {
+    // font-weight: bold;
+    font-weight: bold;
+   }
+  }
+ }
+
+ .componentSix {
+  h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+
+   span {
+    font-weight: 400;
+    color: gray;
+   }
+  }
+
+  h4 {
+   font-weight: bold;
+   padding: 10px 0;
+   width: 70%;
+   text-align: center;
+  }
+
+  p {
+   text-align: center;
+   width: 70%;
+  }
+
+  img {
+   max-height: 250px;
+   width: 150px;
+  }
+
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  ul {
+   list-style-type: disc;
+   //    margin-left: 20px;
+
+   li.outer-item {
+    // font-weight: bold;
+    font-weight: bold;
+   }
+  }
+
+  .grid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); // 4 columns in the top row
+   grid-auto-rows: auto; // Automatically adjust row height
+   gap: 1.25rem; // Equivalent to gap-5
+   justify-items: center; // Center items horizontally
+   align-items: center; // Center items vertically
+
+   @media (max-width: 640px) {
+    // Responsive for sm screens
+    grid-template-columns: repeat(2, 1fr); // 2 columns on smaller screens
+    grid-template-rows: repeat(
+     auto-fill,
+     minmax(100px, auto)
+    ); // Adjust rows as needed
+   }
+
+   // Style for individual items
+   .col-span-1 {
+    text-align: center;
+
+    img {
+     max-width: 100px;
+     height: auto;
+     margin-bottom: 0.5rem;
+    }
+
+    h4 {
+     font-size: 16px;
+     font-weight: 600;
+     color: #333;
+    }
+   }
+  }
+
+  .grid > :nth-child(5) {
+   grid-column: span 1 / span 2; // Start the second row with the first item centered
+  }
+
+  .componentSix-items {
+   width: 25%;
+
+   @media (max-width: 640px) {
+    width: 100%;
+   }
+  }
+ }
+
+ .componentSeven {
+  h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+
+   span {
+    font-weight: 400;
+    color: gray;
+   }
+  }
+
+  img.main-image {
+   //    max-height: 250px;
+   //    width: 150px;
+  }
+
+  img {
+   max-height: 100px;
+   width: 100px;
+  }
+
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  ul {
+   list-style-type: disc;
+   //    margin-left: 20px;
+
+   li.outer-item {
+    // font-weight: bold;
+    font-weight: bold;
+   }
+  }
+
+  .inner-comp {
+   h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+   }
+
+   hr {
+    border: 1px dotted #006834;
+    border-style: none none dotted;
+    color: #fff;
+    background-color: #fff;
+
+    // @media (max-width: 640px) {
+    //  display: none;
+    // }
+   }
+
+   .vl {
+    border-left: 1px dotted #006834;
+    border-style: none none dotted;
+    // height: 100%;
+
+    width: 2px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-color: #006834; /* Adjust the color as needed */
+
+    @media (max-width: 640px) {
+     display: none;
+    }
+   }
+
+   .hl {
+    border-left: 1px dotted #006834;
+    border-style: none none dotted;
+    // height: 100%;
+
+    height: 1px; /* Adjust the width as needed */
+    width: 100%; /* Adjust the height as needed */
+    background-color: #006834; /* Adjust the color as needed */
+
+    @media (max-width: 640px) {
+     display: none;
+    }
+   }
+
+   .top {
+    padding: 0 5px;
+    background-color: #006834;
+    color: white;
+   }
+
+   .veri-list {
+    list-style-type: circle;
+    margin-left: 20px;
+    text-align: left;
+
+    li {
+     padding: 0;
+     margin: 0;
+    }
+   }
+  }
+ }
+
+ .componentEight {
+  h3 {
+   font-size: 24px;
+   font-weight: 700;
+   color: var(--color-primary);
+
+   span {
+    font-weight: 400;
+    color: gray;
+   }
+  }
+
+  img.main-image {
+   //    max-height: 250px;
+   //    width: 150px;
+  }
+
+  img.inner-image {
+   max-height: 100px;
+   width: 100px;
+  }
+
+  h5 {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--color-primary);
+  }
+
+  ul {
+   list-style-type: disc;
+   //    margin-left: 20px;
+
+   li.outer-item {
+    // font-weight: bold;
+    font-weight: bold;
+   }
+  }
+ }
+}
